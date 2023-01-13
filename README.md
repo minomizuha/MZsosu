@@ -7,7 +7,7 @@ MZのソースを公開します。
 
 　-- サイト名：気まぐれものつくサイト　管理者：夢魔　渥(むま　あく)
 
--- 　ＵＲＬ：https://wiki3.jp/botbot
+-- 　ＵＲＬ：https://akumunoyami.hatenadiary.jp/
 
 --    報告場所：https://zawazawa.jp/mattarikeizibandesu/topic/4
 
@@ -76,4 +76,4 @@ MZのソースを公開します。
 
 サイトがメインです。注意。
 
-https://wiki3.jp/botbot
+https://akumunoyami.hatenadiary.jp/
