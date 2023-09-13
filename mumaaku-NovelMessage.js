@@ -16,7 +16,7 @@
  * ノベルモードにて改ページをするには、制御文字「\F」を使用してください。
  *
  * このプラグインには、プラグインコマンドはありません。
- * Yoji Ojimaさま、 神無月サスケさま、DarkPlasmaさま、ありがとうございます！
+ * Yoji Ojimaさま、 神無月サスケさまありがとうございます！
  */
 
 (function() {
@@ -38,10 +38,15 @@
     var _Window_Message_updatePlacement =
             Window_Message.prototype.updatePlacement;
     Window_Message.prototype.updatePlacement = function() {
-        if (!isNovelMode()) {
+        if (isNovelMode()) {
             this.width = 816;
             this.height = 624;
             this.x = (Graphics.boxWidth - this.width) / 2;
+        }
+        else{
+            // this.x = (Graphics.boxWidth - this.width) / 2;
+            this.height = 170;
+            this.y = (this._positionType * (Graphics.boxHeight - this.height)) / 2;
         }
         _Window_Message_updatePlacement.call(this);
         if (isNovelMode()) {
